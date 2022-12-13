@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body{background-color: blue;}
+input {
+  position: absolute;
+  width: 500px;
+  height: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+}
+</style>
+</head>
+
+<body>
+
+<input type="text" size="100" placeholder="blue" name="colour" id="changer" />
+
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+   $("#changer").change(function(){
+    document.body.style.backgroundColor = document.getElementById('changer').value;
+   });
+
+});
+</script>
+</html>
